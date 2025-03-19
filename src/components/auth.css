@@ -92,7 +92,7 @@
 }
 
 .login-container .login .signUpBtn,
-.signUp-container .signUp .signUpBtn{
+.signUp-container .signUp .signUpBtn {
   cursor: pointer;
   height: 3.3rem;
   width: 70%;
@@ -133,29 +133,26 @@
   padding: 0 0.5rem;
 }
 
-.signUp-container .signUp form span{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 80%;
-    column-gap: 1rem;
+.signUp-container .signUp form span {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 80%;
+  column-gap: 1rem;
 }
 
-.signUp-container .signUp form span label{
+.signUp-container .signUp form span label {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-.signUp-container .signUp .signUpBtn{
+.signUp-container .signUp .signUpBtn {
   margin-top: 4rem;
 }
 
-.signUp-container .signUp .alreadyAccount{
+.signUp-container .signUp .alreadyAccount {
   font-size: 1.3rem;
 }
-
-
-
 
 /* ========================================= verify otp email verification =============================== */
 .login-container .verifyOTP h1 {
@@ -172,3 +169,78 @@
   font-size: 1.5rem;
   margin-bottom: 4rem;
 }
+
+/* --------------------------------------------------- media query --------------------------- */
+@media (width < 1200px) {
+  .login-container .login,
+  .signUp-container .signUp{
+    width: 35%;
+  }
+
+  .login-container .verifyOTP {
+    width: 40%;
+  }
+}
+
+
+@media (width < 992px) {
+  .login-container .login,
+  .signUp-container .signUp{
+    width: 40%;
+  }
+
+  .login-container .verifyOTP {
+    width: 50%;
+  }
+}
+
+
+@media (width < 768px) {
+  .login-container .login,
+  .signUp-container .signUp{
+    width: 60%;
+  }
+
+  .login-container .verifyOTP {
+    width: 70%;
+  }
+}
+
+
+@media (width < 576px) {
+  .login-container .login,
+  .signUp-container .signUp{
+    width: 80%;
+  }
+
+  .login-container .verifyOTP {
+    width: 98%;
+  }
+
+  .otp-boxes {
+    margin: 0 1rem;
+  }
+}
+
+
+@media (width < 400px) {
+  .login-container .login,
+  .signUp-container .signUp{
+    width: 95%;
+  }
+  .login-container .verifyOTP {
+    width: 98%;
+  }
+}
+
+@media (width < 250px) {
+
+  .login-container  .otp-boxes {
+    margin: 0 .2rem;
+    height: 3rem;
+  width: 3rem;
+  }
+}
+
+
+
